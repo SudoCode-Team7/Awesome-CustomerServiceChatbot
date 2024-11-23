@@ -9,6 +9,11 @@ This module is designed to:
     Review Summaries and Ratings (SQL DB) — 1 per product (where applicable).
     Assurance/Return Policy Documents (VectorDB) — 1 per product (where applicable).
     Web Page Routing Terms (VectorDB) — 1 per product-related page.
-    Stock Availability (SQL DB) — 1 per product (dynamic updates required).
-
+    
 '''
+import sys
+sys.path.append("..")
+from .main import update_dataset
+
+
+__all__ = ['update_dataset']
